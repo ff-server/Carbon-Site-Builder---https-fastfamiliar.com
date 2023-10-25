@@ -4,7 +4,7 @@
 </div>
 
 <!-- rss feed -->
-<script src="/js/rss-feed.js"></script>
+<script src="/Carbon-Site-Builder---https-fastfamiliar.com/js/rss-feed.js"></script>
 
 <footer>
     <!-- mail sign up and contact prompt -->
