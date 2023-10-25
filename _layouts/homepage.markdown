@@ -28,8 +28,8 @@ layout: default
     </div>
     <div id="sponsors">
         <div id="title">Featured in:</div>
-        <img src="/assets/images/logos/combo.svg" class="desktop" width="100%" height="auto" />
-        <img src="/assets/images/logos/combo-small.svg" class="mobile" width="100%" height="auto" />
+        <img src="/Carbon-Site-Builder---https-fastfamiliar.com/assets/images/logos/combo.svg" class="desktop" width="100%" height="auto" />
+        <img src="/Carbon-Site-Builder---https-fastfamiliar.com/assets/images/logos/combo-small.svg" class="mobile" width="100%" height="auto" />
     </div>
 </div>
 
@@ -41,7 +41,7 @@ layout: default
         <li class="quote">
             {{page.bullets[i]}}
             <div class="number">
-                <img src="/assets/images/homepage/{{in}}.png" width="100px" height="auto">
+                <img src="/Carbon-Site-Builder---https-fastfamiliar.com/assets/images/homepage/{{in}}.png" width="100px" height="auto">
             </div>
         </li>
         {% endif %}
@@ -56,7 +56,7 @@ layout: default
 
 <!-- talk moment -->
 <div id="talk-quote">{{page.talk-quip}}</div>
-<img id="talk-mini-logos" src="/assets/images/logos/second-combo.svg" width="40%" height="auto" />
+<img id="talk-mini-logos" src="/Carbon-Site-Builder---https-fastfamiliar.com/assets/images/logos/second-combo.svg" width="40%" height="auto" />
 
 <!-- mini-menu bar section -->
 <!-- <table id="homepage-mini-menu">
