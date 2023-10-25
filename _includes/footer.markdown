@@ -89,7 +89,7 @@
 	
 	<table id="footer-legal">
 		<tr>
-			<td><span class="build">Build: {% project_version %}</span><br />Fast Familiar 2022. | <a href="/privacy-policy">Privacy Policy</a></td>
+			<td><span class="build">Build: Carbon Site Builder</span><br />Fast Familiar 2022. | <a href="/privacy-policy">Privacy Policy</a></td>
 			<td>Fast Familiar Ltd<br />Registered in England and Wales No: 06191989<br />Registered Charity No: 1120667</td>
 		</tr>
 	</table>
