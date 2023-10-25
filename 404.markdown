@@ -1,0 +1,16 @@
+---
+layout: page
+
+# feature-title: "About us:"
+# feature-subtitle: "The people & ideas behind Fast Familiar"
+# feature-call-to-action: "Find out more about how we think"
+# feature-call-to-action-link: "https://workroom.fastfamiliar.com"
+# feature-image: "/assets/images/about-us/us.jpg"
+---
+
+
+# Oops, nothing found.
+
+We recently updated our site so you might have followed an old link – sorry about that. You might find what you’re looking for [in the main menu](/) or the footer at the bottom of each page. 
+
+If not, please email hello@fastfamiliar.com.

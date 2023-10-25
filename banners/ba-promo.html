@@ -1,0 +1,176 @@
+<html>
+  <head>
+    <title></title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+    <style>
+      body {
+        background-color: #e2dcdc;
+        padding: 0px;
+        margin: 0px;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, sans-serif;
+        color: white;
+      }
+
+      * {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently
+      									supported by Chrome, Opera and Firefox */
+      }
+
+      #call_to_action {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        color: black;
+        width: 100%;
+        text-align: center;
+      }
+      
+      #call_to_action a {
+        color: black;
+        text-decoration: none;
+      }
+      
+      #call_to_action a:hover {
+        text-decoration: underline;
+      }
+      
+      #product_title {
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        left:25%;
+        top:20%;
+        background-image: url(https://ba.fastfamiliar.com/images/title.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    </style>
+  </head>
+  <body>
+    
+    <a href="https://fastfamiliar.com/bad-altitude">
+      <div id="product_title"></div>
+      <p id="call_to_action"><a href="https://fastfamiliar.com/bad-altitude">Buy now, play anytime</a></p>
+    </a>
+    
+    <!-- p5 sketch -->
+    <script>
+      let guys = [];
+      let img;
+      
+      function preload() {
+        // load guy
+        img = loadImage('/assets/images/homepage-banners/ba/eject.png');
+      }
+      
+      function setup() {
+        createCanvas(windowWidth, windowHeight);
+        
+        for (let i=0; i<5; i++) {
+          let g = new EjectGuy();
+          console.log(g);
+          guys.push(g);
+        }
+      }
+      
+      function windowResized() {
+        resizeCanvas(windowWidth, windowHeight);
+      }
+      
+      function draw() {
+        clear(); // clear canvas
+        
+        for (let g of guys) {
+          g.draw();
+        }
+      }
+      
+      class Cloud {
+        constructor() {
+          this.y = random(0, height);
+          this.width = random(50, 100);
+          if (int(random(0, 1)) == 0) {
+            // left to right
+            this.x = -this.width;
+          }else{
+            // right to left
+            this.x = width+this.width;
+          }
+        }
+      }
+      
+      class EjectGuy {
+        constructor() {
+          this.width = random(50, 300);
+          this.height = this.width*1.35;
+          this.x = random(0, width);
+          this.y = height + this.height;
+          
+          if (isMobileDevice()) {
+            this.x = 300;
+            this.y = 500;
+          }
+          
+          this.velocity = random(1, 5);
+          this.rotate = random(-90, 90);
+          this.velocityX = map(this.rotate, -90, 90, -5, 5);
+          this.flip = int(random(0, 1));
+        }
+        
+        draw() {
+          
+          push();
+          translate(this.x, this.y);
+          
+          //fill(255,0,0);
+          //tint(0, 0, 0, map(this.width, 50, 300, 0, 100));
+          
+          rotate(radians(this.rotate));
+          if (this.flip == 0) {
+            push();
+            scale(-1, 1);
+            image(img, -this.width/2, -this.height/2, this.width, this.height);
+            pop();
+          }else {
+            image(img, -this.width/2, -this.height/2, this.width, this.height);
+          }
+          
+          this.y -= this.velocity;
+          this.x -= this.velocityX;
+          
+          // reset if off screen
+          if (this.y < -this.height) {
+            this.y = height;
+          }else if (this.y < -this.width || this.y > width+this.width) {
+            this.y = height + this.height;
+            this.x = random(width);
+            this.rotate = random(-90, 90);
+          }
+          pop();
+        }
+      }
+      
+      
+      function isMobileDevice() {
+        return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+        };
+    </script>
+
+    <script>
+      window.onload = function () {
+        parent.iframeLoaded();
+      };
+    </script>
+  </body>
+</html>
