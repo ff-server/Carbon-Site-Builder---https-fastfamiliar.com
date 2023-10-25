@@ -23,7 +23,7 @@ layout: homepage
 published: true
 
 # this is the background for the homepage section at the top
-splash-background: "/assets/images/homepage-backing/ba.jpg"
+splash-background: "/Carbon-Site-Builder---https-fastfamiliar.com/assets/images/homepage-backing/ba.jpg"
 
 # elements for the homepage
 splash-subtitle: "digital artworks, education + research tools"
@@ -62,13 +62,13 @@ highlighted-artwork-blerbs:
     - a playable science public engagement project about how we can better communicate forensic science and scientific evidence.
     
 highlighted-artwork-art:
-    - /assets/images/homepage-banners/tap/backing.jpg
-    - /assets/images/homepage-banners/ba/backing.jpg
-    - /assets/images/homepage-banners/tec/backing.jpg
+    - /Carbon-Site-Builder---https-fastfamiliar.com/assets/images/homepage-banners/tap/backing.jpg
+    -/Carbon-Site-Builder---https-fastfamiliar.com/assets/images/homepage-banners/ba/backing.jpg
+    - /Carbon-Site-Builder---https-fastfamiliar.com/assets/images/homepage-banners/tec/backing.jpg
 
 highlighted-artwork-title-art:
-    - /assets/images/homepage-banners/tap/title.png
-    - /assets/images/homepage-banners/ba/title.png
-    - /assets/images/homepage-banners/tec/title.png
+    - /Carbon-Site-Builder---https-fastfamiliar.com/assets/images/homepage-banners/tap/title.png
+    - /Carbon-Site-Builder---https-fastfamiliar.com/assets/images/homepage-banners/ba/title.png
+    - /Carbon-Site-Builder---https-fastfamiliar.com/assets/images/homepage-banners/tec/title.png
 
 ---
