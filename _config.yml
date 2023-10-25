@@ -20,7 +20,7 @@
 
 
 email: hello@fastfamiliar.com
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/Carbon-Site-Builder---https-fastfamiliar.com/" # the subpath of your site, e.g. /blog
 twitter_username: fastfamiliar
 facebook_username: fastfamiliar
 instagram_username: fastfamiliarstudio
